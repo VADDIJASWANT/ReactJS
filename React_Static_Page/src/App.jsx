@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import NavBar from 'React_Static_Page/src/Components/NavBar.jsx'
-import Main from 'React_Static_Page/src/Components/MainComponent.jsx'
+import NavBar from './components/NavBar.jsx'
+import Main from './components/MainComponent.jsx'
+
 import './App.css'
 
 function App() {

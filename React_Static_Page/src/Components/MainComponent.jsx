@@ -1,11 +1,14 @@
 function Main() {
     return(
-        <div>
-            <h1>Why I am learning React</h1>
-            <ol>
-                <li>TO GET GOOD JOB</li>
-                <li>TO LEARN NEW LIBRARY</li>
-            </ol>
+        <div className="main-container">
+            <h1>Fun Facts about React</h1>
+            <ul className="main-list">
+                <li>Was first released in 2013</li>
+                <li>Was originally created by Jordan Walke</li>
+                <li>Has well over 100K stars on GitHub</li>
+                <li>Is maintained by Facebook</li>
+                <li>Powers thousands of enterprise apps, including mobile apps</li>
+            </ul>
         </div>
     )
 }
