@@ -1,5 +1,4 @@
-import airbnblogo from "../assets/Airbnblogo.png"
-
+import airbnblogo from "../../public/assets/Airbnblogo.png"
 
 export default function Navbar(){
     return(
