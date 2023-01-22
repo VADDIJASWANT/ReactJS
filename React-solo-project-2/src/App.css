@@ -1,0 +1,57 @@
+.Navbar{
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f55a5a;
+    color: white;
+}
+.All-Places{
+    overflow-y: scroll;
+}
+.fonticon{
+    font-size: 1.5rem ;
+    margin-right:10px;
+}
+.Place{
+    padding:20px;
+    display: flex;
+    width:100%;
+}
+.Place-image{
+    width:125px;
+    height:190px;
+}
+a{
+    text-decoration: none;
+    color:lightgray;
+}
+.place-details{
+    padding:0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:400px;
+}
+.icon{
+    margin-right:2px;
+    color:red;
+}
+.place-location{
+    font-size: 11px;
+}
+.place-location > a{
+    margin-left: 10px;
+}
+.place-Name{
+    font-weight: bold;
+    font-size:25px;
+}
+.place-travelDate{
+    font-weight: bold;
+}
+.place-desc{
+    font-size: 10.24px;
+    line-height: 150%;
+    padding-bottom: 10px;
+}
