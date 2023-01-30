@@ -1,0 +1,88 @@
+#root {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+.Header{
+  width:100%;
+  height:65px;
+  background-color:#672280;
+  color:white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main{
+  padding:36px;
+}
+.Header-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Header-img{
+  width:31px;
+  height:27px;
+}
+.Header-title{
+  font-size: 20.5px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.Header-desc{
+  font-size: 12px;
+}
+
+.form{
+  display: grid;
+  grid-template: 40px 40px /1fr 1fr;
+  gap:17px;
+
+}
+.form-input{
+  font-family: "karla";
+  border-radius: 5px;
+  border:1px solid #d5d4d6;
+  text-indent:5px;
+}
+.form-button{
+  grid-column: 1/ -1;
+  font-family: "karla";
+  border-radius: 5px;
+  background: linear-gradient(
+    90deg,
+    #711f8d 1.14%,
+    #a818da 100%
+  );
+  color:white;
+  border: none;
+  cursor: pointer;
+}
+.MemeImg{
+  width: 480px;
+  padding-top: 36px;
+}
+.meme{
+  position: relative;
+}
+.Text{
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin:15px 0;
+  padding:0 5px;
+  font-size: 2em;
+  text-transform: uppercase;
+  color:white;
+  letter-spacing: 1px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.Top{
+  top:40px;
+}
+.Bottom{
+  bottom: 0;
+}
