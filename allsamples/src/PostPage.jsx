@@ -1,7 +1,7 @@
 export default function PostPage(){
     return(
-        <main>
+        <div>
             <h1>PostPage</h1>
-        </main>
+        </div>
     )
 }

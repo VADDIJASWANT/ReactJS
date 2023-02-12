@@ -7,23 +7,41 @@ import NewPost from './NewPost';
 import PostPage from './PostPage';
 import About from './About';
 import Missing from './Missing';
-import { Route, useHistory } from 'react-router-dom';
-import { Switch } from 'react-router-dom';
+import { createBrowserRouter,
+   Routes,
+    Route,
+    Link,
+    NavLink,
+    RouterProvider,
+    Outlet,
+    createRoutesFromElements } from 'react-router-dom'
 
 import './App.css'
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<Header />} >
+        <Route index element={<Home />} />
+        <Route path="/NewPost" element={<NewPost />} />
+        <Route path="/about" element={<About />} >
+          <Route path="PostPage" element={<PostPage />} />
+          <Route path="Missing" element={<Missing />} />
+        </Route>
+    </Route>
+  )
+)
 
 function App() {
 
   return (
-    <div className="App">
-      <Header />
+    <div className="App">  
+
       <Nav />
-      <Home />
-      <NewPost />
-      <PostPage />
-      <About />
-      <Missing />
-      <Footer />
+      <RouterProvider router={router} />
+      <Outlet />
+      <Footer />  
+
+      
     </div>
   )
 }
